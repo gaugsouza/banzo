@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 nav {
@@ -38,8 +39,8 @@ section {
     flex-direction: column;
     width: 400px;
     height: 200px;
-    margin-left: 683px;
-    margin-top: 294px
+    margin-left: 325px;
+    margin-top: 300px;
 }
 
 h1 {
@@ -68,4 +69,9 @@ button {
 button:hover{
     transition: 0.3s;
     background-color: #000000;
+}
+
+.persons-banzo{
+    max-width: 100%;
+    width: 550px;
 }
