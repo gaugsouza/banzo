@@ -110,7 +110,6 @@ aside p {
     border-style: none;
     border-radius: 10px;
     visibility: visible;
-    order: 1;
     display: none;
 }
 

@@ -127,10 +127,6 @@ corrigir.addEventListener("click", () => {
     } else {
         console.log('tdo errado')
         alert("Acho que deu errado, tente de novo no botão limpar! :/")
-        // respostaErrada.style.visibility = 'visible'
-        // respostaCorreta.remove()
-        // limpar.disabled = true
-        // corrigir.disabled = true
     }
 
 })
