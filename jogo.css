@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+nav {
+    width: 100vw;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
+    font-size: 18pt;
+    color: #cd4538;
+}
+
+button {
+    cursor: pointer;
+    width: 320px;
+    height: 45px;
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 14pt;
+    background-color: #cd4538;
+    border-style: none;
+    border-radius: 10px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+aside img {
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+}
+
+aside p {
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.texto {
+    width: 440px;
+    color: #000000;
+    text-align: center;
+}
+
+.imagem {
+    width: 120px;
+}
+
+.posImagem {
+    width: 220px;
+}
+
+#botaoCont {
+    display: none;
+}
+
+.logo{
+    padding-top: 30px;
+    width: 230px;
+}
+
+#botao1:hover{
+    transition: 0.3s;
+    background-color: #000000;
+}
+
+#botaoCont:hover{
+    transition: 0.3s;
+    background-color: #000000;
+}
