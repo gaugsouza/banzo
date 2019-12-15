@@ -1,24 +1,24 @@
-body{
+body > div{
     align-items: center;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     justify-content: center;
-    margin: 0;
+    width: 97vw;
 }
-body > h1{
+div > h1{
     color: black;
 }
-body > img{
-    width: 70vw;
+div > img{
+    width: 70%;
 }
-body > div{
+div > div{
     margin: 5vh 5vw;
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
 }
-body > label{
+div > label{
     font-size: 16pt;
     font-weight: bold;
 }
@@ -30,17 +30,18 @@ div > a{
     padding: 1vh 0;
     text-align: center;
     text-decoration: none;
-    width: 30vw;
+    width: 30%;
 }
 form{
     align-items: center;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 form input{
     height: 5vh;
     margin: 1vh 0;
-    width: 75vw;
+    width: 75%;
 }
 form input[type=submit]{
     background-color: black;
@@ -48,12 +49,26 @@ form input[type=submit]{
     border-radius: 6px;;
     color: white;
     font-weight: bold;
-    width: 76vw;
+    width: 76%;
 }
 p a{
     color: #cd4538;
     font-weight: bold;
 }
-@media(min-width:768){
-    
+@media(min-width:1440px){
+    body{
+        align-items: center;
+        background-color: black;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+    }
+    body > div{
+        background-color: white;
+        border-radius: 10px;
+        width: 30vw;
+    }
+    p{
+        margin-bottom: 5vh;
+    }
 }
