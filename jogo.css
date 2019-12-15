@@ -18,7 +18,7 @@ nav img {
 h1 {
     margin-bottom: 0px;
     margin-top: 30px;
-    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
+    font-family: 'Paytone One', sans-serif;
     font-size: 18pt;
     color: #cd4538;
 }
@@ -34,7 +34,14 @@ button {
     border-style: none;
     border-radius: 10px;
 }
-
+#boxContent{
+        display: flex;
+        justify-content: center;
+        height: 70vh;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+}
 aside {
     display: flex;
     justify-content: center;
@@ -70,7 +77,7 @@ aside p {
     width: 220px;
 }
 
-#botaoCont {
+#botaoHTML, #botaoAtividade1, #botaoAtividade2 {
     display: none;
 }
 
@@ -79,12 +86,28 @@ aside p {
     width: 230px;
 }
 
-#botao1:hover{
+#botaoBemVindo:hover, #botaoHTML:hover, #botaoHTML:hover, #botaoAtividade1:hover, #botaoAtividade2:hover{
     transition: 0.3s;
     background-color: #000000;
 }
 
-#botaoCont:hover{
-    transition: 0.3s;
-    background-color: #000000;
+
+#linha {
+    width: 343px;
+    height: 80px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#boxContent{
+    width: 440px;
+}
+
+#boxContent div p {
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
 }
