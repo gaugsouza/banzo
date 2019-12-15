@@ -79,6 +79,15 @@ aside p {
 
 #botaoHTML, #botaoAtividade1, #botaoAtividade2 {
     display: none;
+    cursor: pointer;
+    width: 320px;
+    height: 45px;
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 14pt;
+    background-color: #cd4538;
+    border-style: none;
+    border-radius: 10px;
 }
 
 .logo{
@@ -90,7 +99,20 @@ aside p {
     transition: 0.3s;
     background-color: #000000;
 }
-
+#limpar, .corrigir {
+    cursor: pointer;
+    width: 125px;
+    height: 45px;
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 14pt;
+    background-color: #cd4538;
+    border-style: none;
+    border-radius: 10px;
+    visibility: visible;
+    order: 1;
+    display: none;
+}
 
 #linha {
     width: 343px;
