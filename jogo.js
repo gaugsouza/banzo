@@ -8,6 +8,8 @@ let botaoHTML = document.getElementById('botaoHTML')
 let botaoBemVindo = document.getElementById('botaoBemVindo')
 let botaoAtividade1 = document.getElementById('botaoAtividade1')
 let botaoAtividade2 = document.getElementById('botaoAtividade2')
+let corrigir = document.querySelector('.corrigir')
+let limpar = document.getElementById('limpar')
 
 function limpaContador() {
     sessionStorage.setItem("score", 0);
@@ -34,14 +36,6 @@ function mudarHTML() {
 
 }
 
-// function mudarParaAtividade1() {
-//     h1.innerHTML = "DESAFIO #1"
-//     p.innerHTML = "A linguagem HTML consiste em tags. Toda tag começa com um sinal de < antes do nome da tag e termina com>. Você poderia codar a tag que diz para o browser que queremos ler um site?"
-//     imagem.style.display = "none"
-//     botaoAtividade2.style.display = 'block'
-//     botaoHTML.style.display = 'none'
-// }
-
 function mudarParaAtividade1() {
     boxContent.innerHTML = `
         <h1>DESAFIO #1 </h1>
@@ -49,41 +43,37 @@ function mudarParaAtividade1() {
             <p>
             A linguagem HTML consiste em tags. Toda tag começa com um sinal de < antes do nome da tag e termina com>. Você poderia codar a tag que diz para o browser que queremos ler um site?"
             </p>
+            <p>Clique para adicionar as tags na ordem correta:</p>
         </div>
         <div>
             <div id="linha">
             </div>
         </div>
         <div class="botoes">
-            <button class="limpar">LIMPAR</button>
             <div>
                 <button class="desafioTags0"><</button>
                 <button class="desafioTags2">></button>
                 <button class="desafioTags1">html</button>
             </div>
-            <button class="corrigir">CORRIGIR</button>
-
         </div>
     `
     aside.appendChild(boxContent)
     botaoAtividade2.style.display = 'block'
     botaoAtividade2.style.order = 1
     botaoHTML.style.display = 'none'
+    limpar.style.display = "block"
+    corrigir.style.display = "block"
 
-    let tagEsquerda = document.querySelector('.desafioTags0')
+let tagEsquerda = document.querySelector('.desafioTags0')
 let tagHtml = document.querySelector('.desafioTags1')
 let tagDireita = document.querySelector('.desafioTags2')
-let corrigir = document.querySelector('.corrigir')
-let limpar = document.querySelector('#limpar')
 let linha = document.querySelector('#linha')
-let respostaCorreta = document.querySelector('section')
-let respostaErrada = document.querySelector('header')
 let lista = []
 
 limpaContador();
 
 tagEsquerda.addEventListener("click", () => {
-    tagEsquerda.style.backgroundColor = "#b6c3d6";
+    tagEsquerda.style.display = "none";
     lista.push(0)
     console.log(lista)
     let criar0 = document.createElement('div')
@@ -92,11 +82,12 @@ tagEsquerda.addEventListener("click", () => {
     <button class="desafioTags0"><</button>
     `
     linha.appendChild(criar0)
+    
 
 })
 
 tagDireita.addEventListener("click", () => {
-    tagDireita.style.backgroundColor = "#b6c3d6";
+    tagDireita.style.display = "none";
     lista.push(2)
     console.log(lista)
     let criar2 = document.createElement('div')
@@ -109,7 +100,7 @@ tagDireita.addEventListener("click", () => {
 })
 
 tagHtml.addEventListener("click", () => {
-    tagHtml.style.backgroundColor = "#b6c3d6";
+    tagHtml.style.display = "none";
     lista.push(1)
     console.log(lista)
     let criar1 = document.createElement('div')
@@ -120,45 +111,76 @@ tagHtml.addEventListener("click", () => {
     linha.appendChild(criar1)
 })
 
-limpar.addEventListener("click", () => {
-    tagDireita.style.backgroundColor = "#220458";
-    tagEsquerda.style.backgroundColor = "#220458";
-    tagHtml.style.backgroundColor = "#220458";
-    linha.innerHTML = " "
-    lista = []
-    respostaErrada.style.visibility = 'hidden'
-    respostaCorreta.style.visibility = 'hidden'
-
-})
-
 corrigir.addEventListener("click", () => {
     let correcao = [0, 1, 2]
     let myCorrecao = correcao.toString()
     let myLista = lista.toString()
     console.log(myCorrecao)
     console.log(myLista)
+
     if (myCorrecao === myLista) {
         console.log('asertou miserável')
-        respostaCorreta.style.visibility = 'visible'
-        limpar.disabled = true
-        corrigir.disabled = true
+        alert("acertou! Vá paara próxima atividade :)")
         contador()
-
-
 
 
     } else {
         console.log('tdo errado')
-        respostaErrada.style.visibility = 'visible'
-        respostaCorreta.remove()
-        limpar.disabled = true
-        corrigir.disabled = true
+        alert("Acho que deu errado, tente de novo no botão limpar! :/")
     }
+
+})
+
+limpar.addEventListener("click" ,()=>{
+    linha.innerHTML = ""
+    tagEsquerda.style.display = "block";
+    tagDireita.style.display = "block";
+    tagHtml.style.display = "block";
+    botaoAtividade2.style.display = 'block'
+    botaoAtividade2.style.order = 1
+    botaoHTML.style.display = 'none'
+    lista=[]
 
 })
 
 }
 
+function mudarParaAtividade2() {
+    boxContent.innerHTML(botaoAtividade2) = `
+    <div>
+            <h1>DESAFIO #2</h1>
+
+            <div class="texto">
+                <p>Ao adicionar as tags do body entre as tags do HTML, nós avisamos o browser saber onde o conteúdo do site irá. Clique nos botões na ordem até que as tags do body fique dentro do HTML.
+                </p>
+            </div>
+        </div>
+        <div>
+
+            <div id="linha">
+
+
+            </div>
+
+
+        </div>
+
+        <div class="botoes">
+            <button id="limpar">LIMPAR</button>
+
+            <div>
+                <button class="desafioTags3">< /html ></button>
+                <button class="desafioTags0"> < html ></button>
+                <button class="desafioTags2"> < /body > </button>
+                <button class="desafioTags1">< body ></button>
+            </div>
+
+            <button class="corrigir">CORRIGIR</button>
+
+        </div>
+    `
+}
 
 botaoBemVindo.onclick = mudarHTML;
 botaoHTML.onclick = mudarParaAtividade1;
+botaoAtividade1.onclick = mudarParaAtividade2
