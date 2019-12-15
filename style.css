@@ -3306,3 +3306,21 @@ h2.title {
   background: #ffffff;
   color: black !important;
 }
+
+button.proximo{
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  color: #ffffff;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 14pt;
+  font-weight: bold;
+  background-color: #cd4538;
+  border-style: none;
+  border-radius: 10px;
+}
+
+button.proximo:hover{
+  transition: 0.3s;
+  background-color: #000000;
+}
