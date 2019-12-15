@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+nav {
+    width: 100vw;
+    height: 80px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div p {
+    color: white;
+    margin: 0;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.container {
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container div {
+    width: 50px;
+    height: 1px;
+    background-color: white;
+}
+
+.container p:nth-child(5) {
+    color: #cd4538;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    margin-left: 325px;
+    margin-top: 300px;
+}
+
+h1 {
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
+    color: #cd4538;
+}
+
+h2 {
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
+    color: black;
+    margin-top: 0;
+}
+
+button {
+    cursor: pointer;
+    width: 320px;
+    height: 45px;
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 14pt;
+    background-color: #cd4538;
+    border-style: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    transition: 0.3s;
+    background-color: #000000;
+}
+
+.persons-banzo{
+    max-width: 100%;
+    width: 550px;
+}
