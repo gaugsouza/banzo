@@ -3319,13 +3319,9 @@ button.proximo{
   background-color: #cd4538;
   border-style: none;
   border-radius: 10px;
+  opacity: 0.65; 
+  cursor: not-allowed;
 }
-
-button.proximo:hover{
-  transition: 0.3s;
-  background-color: #000000;
-}
-
 
 body {
   background-color: #CCCCCC;
@@ -6645,12 +6641,9 @@ button.proximo{
   font-weight: bold;
   background-color: #cd4538;
   border-style: none;
-  border-radius: 10px;
-}
-
-button.proximo:hover{
-  transition: 0.3s;
-  background-color: #000000;
+  border-radius: 10px;  
+  opacity: 0.65; 
+  cursor: not-allowed;
 }
 
 .center {
@@ -6670,4 +6663,9 @@ button.proximo:hover{
 .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
   display: table;
   content: none !important;
+}
+
+.assinatura{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif; 
+  color: black;
 }
