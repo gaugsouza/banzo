@@ -1,74 +1,80 @@
-body > div{
+.modalBody{
     align-items: center;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     justify-content: center;
-    width: 97vw;
 }
-div > h1{
+.modalH1{
     color: black;
 }
-div > img{
+.modalImage{
     width: 70%;
 }
-div > div{
+.modalDiv{
     margin: 5vh 5vw;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
-div > label{
+.modalLabel{
     font-size: 16pt;
     font-weight: bold;
 }
-div > a{
+.divA{
     background-color: #cd4538;
     border-radius: 10px;
-    color: white;
+    color: white !important;
     font-weight: bold;
     padding: 1vh 0;
     text-align: center;
-    text-decoration: none;
     width: 30%;
 }
-form{
+.divA:hover{
+    background-color: black;
+    color:white !important;
+    transition: 0.3s;
+}
+.modalForm{
     align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-form input{
+.modalFormInput{
     height: 5vh;
     margin: 1vh 0;
     width: 75%;
 }
-form input[type=submit]{
-    background-color: black;
+.modalFormSubmit{
     border: none;
     border-radius: 6px;;
     color: white;
     font-weight: bold;
     width: 76%;
+    text-decoration: none;
 }
-p a{
+.modalFormSubmit:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+.modalPA{
     color: #cd4538;
     font-weight: bold;
 }
 @media(min-width:1080px){
-    body{
+    .modalBody{
         align-items: center;
-        background-color: black;
         display: flex;
         height: 100vh;
         justify-content: center;
     }
-    body > div{
+    .modalDiv{
         background-color: white;
         border-radius: 10px;
         width: 30vw;
     }
-    p{
+    .modalP{
         margin-bottom: 5vh;
     }
 }
