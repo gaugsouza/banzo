@@ -55,7 +55,7 @@ p a{
     color: #cd4538;
     font-weight: bold;
 }
-@media(min-width:1440px){
+@media(min-width:1080px){
     body{
         align-items: center;
         background-color: black;
