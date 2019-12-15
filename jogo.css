@@ -18,7 +18,7 @@ nav img {
 h1 {
     margin-bottom: 0px;
     margin-top: 30px;
-    font-family: 'Paytone One', sans-serif;
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
     font-size: 18pt;
     color: #cd4538;
 }
@@ -51,7 +51,7 @@ aside img {
 }
 
 aside p {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -80,6 +80,11 @@ aside p {
 }
 
 #botao1:hover{
+    transition: 0.3s;
+    background-color: #000000;
+}
+
+#botaoCont:hover{
     transition: 0.3s;
     background-color: #000000;
 }

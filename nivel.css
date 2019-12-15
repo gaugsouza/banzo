@@ -36,7 +36,7 @@ nav div p {
 
 h1 {
     margin: 20px 20px 0 20px;
-    font-family: 'Khula', sans-serif;
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
     font-size: 18pt;
     color: black;
     text-align: center;
@@ -82,7 +82,7 @@ section {
 }
 
 .texto {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
     text-align: center;
 }
 
