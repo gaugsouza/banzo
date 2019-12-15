@@ -30,7 +30,7 @@ function mudarHTML() {
     h1.innerHTML = "O QUE É HTML?"
     p.innerHTML = "Vamos começar com HTML, a linguagem de marcação responsável pela estrutura das páginas web na internet. A linguagem HTML diz para o browser como ler os conteúdos do site, como imagem, links e textos."
     imagem.classList.replace("imagem", "posImagem");
-    imagem.src = "./images/template.png"
+    imagem.src = "assets/img/template.png"
     botaoHTML.style.display = 'block'
     botaoBemVindo.style.display = 'none'
 
@@ -50,7 +50,7 @@ function mudarParaAtividade1() {
             </div>
         </div>
         <div class="botoes">
-            <div>
+            <div class="respostas">
                 <button class="desafioTags0"><</button>
                 <button class="desafioTags2">></button>
                 <button class="desafioTags1">html</button>

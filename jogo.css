@@ -132,3 +132,10 @@ aside p {
     padding-bottom: 5px;
     text-align: center;
 }
+.respostas{
+    display: flex;
+}
+aside > a{
+    margin-top: 2vh;
+    order: 1;
+}
