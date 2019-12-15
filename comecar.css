@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 nav {
@@ -27,6 +28,7 @@ nav div p {
 .container div {
     width: 50px;
     height: 1px;
+    background-color: white;
 }
 
 .container p:nth-child(5) {
@@ -38,8 +40,8 @@ section {
     flex-direction: column;
     width: 400px;
     height: 200px;
-    margin-left: 683px;
-    margin-top: 294px
+    margin-left: 325px;
+    margin-top: 300px;
 }
 
 h1 {
@@ -68,4 +70,9 @@ button {
 button:hover{
     transition: 0.3s;
     background-color: #000000;
+}
+
+.persons-banzo{
+    max-width: 100%;
+    width: 550px;
 }
