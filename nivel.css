@@ -111,3 +111,7 @@ button:hover{
     transition: 0.3s;
     background-color: #000000;
 }
+
+.p1 .p2 .p3{
+    color: #cd4538;
+}

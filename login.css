@@ -1,0 +1,80 @@
+.modalLoginBody{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+.modalH1{
+    color: black;
+}
+.modalImage{
+    width: 70%;
+}
+.modalDiv{
+    margin: 5vh 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.modalLabel{
+    font-size: 16pt;
+    font-weight: bold;
+}
+.divA{
+    background-color: #cd4538;
+    border-radius: 10px;
+    color: white !important;
+    font-weight: bold;
+    padding: 1vh 0;
+    text-align: center;
+    width: 30%;
+}
+.divA:hover{
+    background-color: black;
+    color:white !important;
+    transition: 0.3s;
+}
+.modalForm{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.modalFormInput{
+    height: 5vh;
+    margin: 1vh 0;
+    width: 75%;
+}
+.modalFormSubmit{
+    border: none;
+    border-radius: 6px;;
+    color: white;
+    font-weight: bold;
+    width: 76%;
+    text-decoration: none;
+}
+.modalFormSubmit:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+.modalPA{
+    color: #cd4538;
+    font-weight: bold;
+}
+@media(min-width:1080px){
+    .modalLoginBody{
+        align-items: center;
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+    }
+    .modalDiv{
+        background-color: white;
+        border-radius: 10px;
+        width: 30vw;
+    }
+    .modalP{
+        margin-bottom: 5vh;
+    }
+}
