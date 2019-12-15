@@ -10,7 +10,7 @@ function mudarImagem() {
     h1.innerHTML = "O QUE É HTML?"
     p.innerHTML = "Vamos começar com HTML, a linguagem de marcação responsável pela estrutura das páginas web na internet. A linguagem HTML diz para o browser como ler os conteúdos do site, como imagem, links e textos."
     imagem.classList.replace("imagem", "posImagem");
-    imagem.src = "./images/template.png"
+    imagem.src = "./assets/img/template.png"
     segundoBotao.style.display = 'block'
     botao1.style.display = 'none'
 
