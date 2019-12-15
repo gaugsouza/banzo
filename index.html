@@ -24,6 +24,7 @@
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="login.css">
+		<link rel="stylesheet" href="cadastro.css">
 		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     	<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
@@ -37,8 +38,8 @@
 					<a class="btn-banzo__light btn btn-raised btn-lg" data-toggle="modal" data-target="#cadastro">
 						Cadastrar
 					</a>
-					<a class="btn-banzo btn btn-raised btn-lg">
-						login
+					<a class="btn-banzo btn btn-raised btn-lg" data-toggle="modal" data-target="#login">
+						Login
 					</a>
 				</div>
 
@@ -98,7 +99,7 @@
 		</div>
     </div>
     
-    <div class="modal fade" id="cadastro" role="dialog">
+    <div class="modal fade" id="login" role="dialog">
 		<div class="modal-dialog modal-md">
 		  	<div class="modal-content">
 				<div class="modal-header mHeader">
@@ -125,6 +126,34 @@
 		</div>
 	</div>
 
+    <div class="modal fade" id="cadastro" role="dialog">
+		<div class="modal-dialog modal-md">
+		  	<div class="modal-content">
+				<div class="modal-header mHeader">
+			  		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body modalBody">
+					<div class="cadastroBody">
+						<img class="cadastroImg" src="logo.png" alt="">
+						<label class="cadastroLabel" for="">EU SOU...</label>
+						<div class="cadastroDiv">
+							<a class="cadastroA aluno" href="">ALUNO</a>
+							<a class="cadastroA professor" href="">PROFESSOR</a>
+						</div>
+						<h1 class="cadastroH1">Registre sua conta</h1>
+						<form class="cadastroForm" action="">
+							<input class="cadastroFormInput" type="text" name="name" placeholder="Como você gostaria de ser chamado?" id="">
+							<input class="cadastroFormInput email" type="email" placeholder="Seu E-mail">
+							<input class="cadastroFormInput senha" type="password" name="" placeholder="Sua Senha">
+							<input class="cadastroFormInput confirmaSenha" type="password" name="" placeholder="Confirme sua senha">
+							<input class="cadastroFormSubmit login" type="submit" value="LOGIN">
+						</form>
+						<p class="cadastroPA">Não tem uma conta? <a href="">Se Inscreva</a></p>
+					</div>
+				</div>
+		  	</div>
+		</div>
+	</div>
 
 </body>
 
