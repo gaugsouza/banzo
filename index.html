@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Banzo.</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+		<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Banzo.</title>
+
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+		<!--     Fonts and icons     -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="login.css">
+		<link rel="stylesheet" href="cadastro.css">
+		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    	<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+
+	<div class="landing-page">
+		<nav class="navbar navbar-transparent navbar-absolute">
+			<div class="container">
+				<img src="./assets/img/logo.png"class="logo__banzo">
+
+				<div class="navbar-header">
+					<a class="btn-banzo__light btn btn-raised btn-lg" data-toggle="modal" data-target="#cadastro">
+						Cadastrar
+					</a>
+					<a class="btn-banzo btn btn-raised btn-lg" data-toggle="modal" data-target="#login">
+						Login
+					</a>
+				</div>
+
+			</div>
+		</nav>
+
+		<div class="wrapper">
+			<div class="header header-filter" style="background: white;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<img src="./assets/img/persons.png"class="persons__banzo">
+						</div>
+
+						<div class="col-md-7" style="text-align: right;">
+							<h1 class="title">Tecnologia educacional <span style="color:#cd4538;">inclusiva.</span></h1>
+							<h4>de Pretos para Pretos</h4>
+							<br />
+							<div class="button__conheca">
+								<a class="btn-banzo btn btn-raised btn-lg">
+									Conheça.
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+			
+			<footer class="footer">
+				<div class="container">
+					<nav class="pull-left">
+						<ul>
+							<li>
+								<a href="#">
+									BANZO
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									EDUCAÇÃO
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								 TECNOLOGIA
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="copyright pull-right">
+						De negros, para negros, pensando em negros  <i style="color: #cd4538;" class="fa fa-heart heart"></i> 
+					</div>
+				</div>
+			</footer>
+
+		</div>
+    </div>
+    
+    <div class="modal fade" id="login" role="dialog">
+		<div class="modal-dialog modal-md">
+		  	<div class="modal-content">
+				<div class="modal-header mHeader">
+			  		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="modalLoginBody">
+						<img class="modalImage" src="logo.png" alt="">
+						<label class="modalLabel" for="">EU SOU...</label>
+						<div class="modalDiv">
+							<a class="divA aluno">ALUNO</a>
+							<a class="divA professor">PROFESSOR</a>
+						</div>
+						<h1 class="modalH1">Logue na sua conta</h1>
+						<form action="nivel.html" class="modalForm">
+							<input class="modalFormInput email" type="email" placeholder="Seu E-mail">
+							<input class="modalFormInput senha" type="password" name="" placeholder="Sua Senha">
+							<input class="modalFormSubmit login" type="submit" value="LOGIN">
+						</form>
+						<p class="modalPA">Não tem uma conta? <a>Se Inscreva</a></p>
+					</div>
+				</div>
+		  	</div>
+		</div>
+	</div>
+
+    <div class="modal fade" id="cadastro" role="dialog">
+		<div class="modal-dialog modal-md">
+		  	<div class="modal-content">
+				<div class="modal-header mHeader">
+			  		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body modalBody">
+					<div class="cadastroBody">
+						<img class="cadastroImg" src="logo.png" alt="">
+						<label class="cadastroLabel" for="">EU SOU...</label>
+						<div class="cadastroDiv">
+							<a class="cadastroA aluno" href="">ALUNO</a>
+							<a class="cadastroA professor" href="">PROFESSOR</a>
+						</div>
+						<h1 class="cadastroH1">Registre sua conta</h1>
+						<form class="cadastroForm" action="">
+							<input class="cadastroFormInput" type="text" name="name" placeholder="Como você gostaria de ser chamado?" id="">
+							<input class="cadastroFormInput email" type="email" placeholder="Seu E-mail">
+							<input class="cadastroFormInput senha" type="password" name="" placeholder="Sua Senha">
+							<input class="cadastroFormInput confirmaSenha" type="password" name="" placeholder="Confirme sua senha">
+							<input class="cadastroFormSubmit login" type="submit" value="LOGIN">
+						</form>
+						<p class="cadastroPA">Não tem uma conta? <a href="">Se Inscreva</a></p>
+					</div>
+				</div>
+		  	</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
